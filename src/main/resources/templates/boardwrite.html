@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boardwrite</title>
+</head>
+<style>
+  .layout {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .layout input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .layout textarea {
+    margin-top: 100%;
+    margin-top: 10px;
+    min-height: 300px;
+  }
+  .delbtn {
+    width: 10%;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+  }
+</style>
+<body>
+<div class="layout">
+  <form action="/board/writepro" method="post" enctype="multipart/form-data">
+    <input name="title" type="text" />
+    <textarea name="content"> </textarea>
+    <input type="file" name="file" />
+    <button type="submit" class="delbtn">작성</button>
+    <button onclick="location.href='main.html'">MORE</button>
+  </form>
+</div>
+</body>
+</html>

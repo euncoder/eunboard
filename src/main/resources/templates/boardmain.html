@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <form action="/board/main" method="get" enctype="multipart/form-data">
+  <div class="intro_bg">
+    <div class="header" id="link_header">
+      <div class="searchArea">
+        <form>
+          <input type="search" placeholder="search" />
+          <span>search</span>
+        </form>
+      </div>
+      <ul class="nav">
+        <li><a href="#link_header">HOME</a></li>
+        <li><a href="#link_main_text0">ABOUT</a></li>
+        <li><a href="#link_main_text1">SERVICE</a></li>
+        <li><a href="#link_main_text2">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="intro_text">
+      <h1>아무것도 하지 않으면, 아무일도 일어나지 않는다.</h1>
+      <h4 class="contents1">어쩌라고 뻐큐뻐큐</h4>
+    </div>
+  </div>
+  <!--intro end-->
+  <ul class="amount">
+    <li>
+      <div>
+        <div class="contents1">근데 하기 싫은걸 우째</div>
+        <div class="result">진짜 하기싫어</div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="contents1">의욕이 없다</div>
+        <div class="result">없다 없어</div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="contents1">노는건 쉬운데</div>
+        <div class="result">돈이없어</div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="contents1">남들 다</div>
+        <div class="result">일하지</div>
+      </div>
+    </li>
+  </ul>
+  <!--amount end-->
+  <div class="main_text0" id="link_main_text0">
+    <h1>SANRIO friends</h1>
+    <div class="contents1">내돈 내놔 산리오 자식들ㅇr</div>
+    <ul class="icons">
+      <li>
+        <div class="icon_img">
+          <img src="image/1.jpg" />
+        </div>
+        <div class="contents1_bold">my Melody</div>
+        <div class="contents2">게시판 작성</div>
+        <button class="more" onclick="location.href='boardwrite.html'">MORE</button>
+      </li>
+      <li>
+        <div class="icon_img">
+          <img src="image/2.jpg" />
+        </div>
+        <div class="contents1_bold">kuromi</div>
+        <div class="contents2">게시판 리스트</div>
+        <button class="more">MORE</button>
+      </li>
+      <li>
+        <div class="icon_img">
+          <img src="image/33.jpg" />
+        </div>
+        <div class="contents1_bold">HelloKitty</div>
+        <div class="contents2">그 외</div>
+        <button class="more">MORE</button>
+      </li>
+    </ul>
+  </div>
+  <!--main_text0 end-->
+  <div class="main_text1" id="link_main_text1">
+    <h1>whatever</h1>
+    <div class="contents1">everything is gonna be alright</div>
+    <div class="service">
+      <div class="sanrio_photo">
+        <img src="image/4.jpg" />
+      </div>
+      <div class="contents2">
+        <h2>우다다다다다다</h2>
+        나는 차라리 웃고있는 삐에로가 <br />
+        좋아 <br />
+        예예예예 <br />
+        나는 차라리 웃고있는 삐에로가 <br />좋아 <br />
+        예예예예 <br />나는 차라리 웃고있는 삐에로가 좋아 예예예예
+      </div>
+    </div>
+  </div>
+  <!--main_text1 end-->
+  <div class="main_text2" id="link_main_text2">
+    <ul>
+      <li>
+        <div><h1>YOUTUBE</h1></div>
+        <div>이모도 택배깡 쥬아해_은깡</div>
+        <div class="more2">
+          <a href="https://www.youtube.com/@eunggangyiya"
+          >더 알아보기</a
+          >
+        </div>
+      </li>
+      <li>
+        <div><h1>INSTAGRAM</h1></div>
+        <div>a_eun_a</div>
+        <div class="more2">
+          <a href="https://www.instagram.com/a_eun_go/">더 알아보기</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <footer>
+    <div>LOGO</div>
+    <div class="logo">
+      만든이:으나 <br />주소:뉴욕 센트럴파크 <br />
+      전화번호:뻐큐뻐큐
+    </div>
+    <div>
+      <div
+          class="top_header"
+          style="position: fixed; bottom: 15px; right: 15px"
+      >
+        <a href="#link_header">
+          <img src="image/top.jpg" width="100" height="100" ="top"
+          /></a>
+      </div>
+    </div>
+  </footer>
+  </form>
+</div>
+</body>
+</html>
